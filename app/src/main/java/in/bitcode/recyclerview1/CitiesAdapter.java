@@ -38,6 +38,12 @@ public class CitiesAdapter extends RecyclerView.Adapter<CitiesAdapter.CityViewHo
         return cities.size();
     }
 
+
+    @Override
+    public int getItemViewType(int position) {
+        return super.getItemViewType(position);
+    }
+
     @NonNull
     @Override
     public CityViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
